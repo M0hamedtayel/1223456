@@ -22,9 +22,6 @@ export default function Hero() {
             protection for web applications.
           </p>
           <div className="flex justify-center gap-4">
-            <Button asChild>
-              <a href="#contact">Get in Touch</a>
-            </Button>
             <Button variant="outline" asChild>
               <a href="#about">Learn More</a>
             </Button>
