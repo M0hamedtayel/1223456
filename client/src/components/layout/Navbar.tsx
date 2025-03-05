@@ -29,7 +29,7 @@ export default function Navbar() {
               <a className="text-xl font-bold text-primary">m0hamedtayel</a>
             </Link>
           </div>
-          
+
           <div className="hidden md:flex items-center space-x-4">
             {navigation.map((item) => (
               <a
