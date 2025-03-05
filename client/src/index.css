@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 240 10% 4%;
+    --foreground: 210 40% 98%;
+    
+    --card: 240 10% 4%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 240 10% 4%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 211 100% 50%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 217 19% 27%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217 19% 27%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217 19% 27%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217 19% 27%;
+    --input: 217 19% 27%;
+    --ring: 211 100% 50%;
+
+    --chart-1: 211 100% 50%;
+    --chart-2: 217 91% 60%;
+    --chart-3: 199 89% 48%;
+    --chart-4: 168 83% 41%;
+    --chart-5: 142 71% 45%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-mono antialiased;
+  }
+}
+
+.section-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+}
+
+.skill-bar {
+  @apply h-2 bg-secondary rounded-full overflow-hidden;
+}
+
+.skill-progress {
+  @apply h-full bg-primary transition-all duration-1000;
+}
